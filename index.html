@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celular</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="phone">
+        <!-- Tela de bloqueio -->
+        <div id="lock-screen" class="screen active">
+            <div class="time">17:47</div>
+            <div class="date">Qui, 3 de Outubro</div>
+            <p>Deslize para desbloquear</p>
+        </div>
+
+        <!-- Tela inicial (home screen) -->
+        <div id="home-screen" class="screen">
+            <div class="status-bar">
+                <span>LTE</span>
+                <span>82%</span>
+                <span>17:47</span>
+            </div>
+            <div class="app-grid">
+                <div class="app-icon whatsapp" data-app="whatsapp">WhatsApp</div>
+                <div class="app-icon instagram" data-app="instagram">Instagram</div>
+                <div class="app-icon uber" data-app="uber">Uber</div>
+                <div class="app-icon ifood" data-app="ifood">iFood</div>
+            </div>
+        </div>
+
+        <!-- Layouts dos aplicativos -->
+        <div id="whatsapp-app" class="app-screen">
+            <h2>WhatsApp</h2>
+            <p>Envie mensagens para seus contatos.</p>
+        </div>
+
+        <div id="instagram-app" class="app-screen">
+            <h2>Instagram</h2>
+            <p>Navegue por fotos e vídeos.</p>
+        </div>
+
+        <div id="uber-app" class="app-screen">
+            <h2>Uber</h2>
+            <p>Chame um motorista rapidamente.</p>
+        </div>
+
+        <div id="ifood-app" class="app-screen">
+            <h2>iFood</h2>
+            <p>Peça comida para entrega.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
