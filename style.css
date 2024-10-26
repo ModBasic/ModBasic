@@ -1,0 +1,105 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo geral do celular */
+.phone {
+    width: 360px;
+    height: 720px;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 50px auto;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+
+/* Tela ativa e oculta */
+.screen, .app-screen {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    background-color: #f5f5f5;
+    color: black;
+}
+
+.screen.active, .app-screen.active {
+    display: block;
+}
+
+/* Tela de bloqueio */
+#lock-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #ff5722, #ffa726);
+}
+
+#lock-screen .time {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#lock-screen .date {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Tela inicial (home screen) */
+#home-screen {
+    background-color: #202124;
+}
+
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.app-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Cores específicas dos aplicativos */
+.whatsapp {
+    background-color: #25D366;
+}
+
+.instagram {
+    background-color: #E4405F;
+}
+
+.uber {
+    background-color: #000;
+}
+
+.ifood {
+    background-color: #FF0000;
+}
